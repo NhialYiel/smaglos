@@ -1,0 +1,2 @@
+# smaglos
+eksamen
