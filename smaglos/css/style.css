@@ -2,7 +2,7 @@ body {
     font: 12px/18px Arial, sans-serif;
 }
 
-#wrapper {
+.wrapper {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -12,7 +12,7 @@ body {
 -----------------------------------------------------------------------------*/
 #header {
     height: 150px;
-    background: black;
+    background: #000116;
 }
 
 #venstremenu {
@@ -51,12 +51,20 @@ body {
   
   li a {
     padding: 30px;
-    color: orange;
+    color: #f9ab22;
   }
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
+
+section {
+  width: 100%;
+  height: 800px;
+  
+}
+
+
 
 #banner {
   width: 100%;
@@ -73,7 +81,7 @@ body {
 }
 
 .button1 {
-  background-color: orange;
+  background-color: #f9ab22;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -89,7 +97,7 @@ body {
 }
 
 .button2 {
-  background-color: orange;
+  background-color: #f9ab22;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -105,7 +113,7 @@ body {
 }
 
 .button3 {
-  background-color: orange;
+  background-color: #f9ab22;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -119,6 +127,82 @@ body {
   top: -500px;
   right: -850px;
 }
+
+#s2 {
+  background-color: #000116;
+}
+
+#omos {
+  font-size: 3.5em;
+  color: #f9ab22
+}
+
+#omostekst {
+  color: #f9ab22;
+  font-size: 2em;
+  line-height: 1.5em;
+  width: 45%;
+}
+
+/* SLIDESHOW-----------------------------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+/* SLIDESHOW SLUT -----------------------------------------------------------------------------------------*/
+
 
 
 #overskriftevents {
@@ -160,12 +244,14 @@ body {
   font-size: 80px;
   text-align: center;
   padding: 50px;
+  color: #f9ab22;
 }
 
 #underoverskriftmenu {
   font-size: 40px;
   text-align: center;
   padding: 50px;
+  color: #f9ab22;
 
 }
 
@@ -183,10 +269,105 @@ body {
   position: relative;
 }
 
+#teksttilmenu {
+  color: #f9ab22;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 
 /* Footer
 -----------------------------------------------------------------------------*/
 #footer {
     height: auto;
-    background: #BFF08E;
+    background: #000116;
+    padding: 70px 0;
+    
+}
+
+.footertekst {
+  color: #f9ab22;
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+.footer-col{
+   width: 33.33%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #f9ab22;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
