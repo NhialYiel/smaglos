@@ -11,48 +11,58 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-    height: 150px;
-    background: #000116;
+    height: 100vh;
+    width: 100%;
+    background-image:radial-gradient(circle, rgba(177, 181, 196, 0.308) 0%, rgba(0,0,0,1) 93%),url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    
+ 
+    
 }
 
-#venstremenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: inline-flex;
-    font-size: 25px;
-    top: 10px;
-    position: relative;
-    right: -450px;
-  }
 
-  #hojremenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    top: 10px;
-    position: relative;
-    right: -650px;
-    display: inline-flex;
-    font-size: 25px;
+.menubar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: transparent;
+}
 
-  }
 
-  #logo {
-    display: inline-block;
+
+.menubar ul {
+display: block;
+text-align: center;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.menubar ul li {
+display: inline-block;
+  width: 220px;
+list-style: none;
   vertical-align: middle;
-  position: relative;
-  right: -540px;
-  }
-  
-  
-  
-  li a {
-    padding: 30px;
-    color: #f9ab22;
-  }
+}
+
+.menubar ul li a {
+text-decoration: none;
+color: white;
+padding: 0 15px 0 0;
+font-size: 20px;
+color: #f9ab22;
+}
+
+.logo img {
+margin: 10px auto 0px auto;
+display: block;
+width:220px;
+}
+
+
 
 
 /* Middle
@@ -130,11 +140,25 @@ section {
 
 #s2 {
   background-color: #000116;
+  
+  
+}
+
+.omosbillede1 {
+  position: relative;
+  display: flex;
+  padding-bottom: 10px;
+  right: -700px;
+  top: -600px;
+  width: 100%;
+  max-width: 450px;
 }
 
 #omos {
   font-size: 3.5em;
-  color: #f9ab22
+  color: #f9ab22;
+  padding-bottom: 60px;
+  padding-top: 50px;
 }
 
 #omostekst {
@@ -144,12 +168,21 @@ section {
   width: 45%;
 }
 
+#s3 {
+  background-image: linear-gradient(0deg, rgba(148, 148, 148, 0.24) 0%, rgba(0,0,0,1) 100%), url("../images/orange.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
 /* SLIDESHOW-----------------------------------------------------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding-top: 50px;
 }
 
 /* Caption text */
@@ -240,15 +273,19 @@ section {
   
 }
 
+#s4 {
+  background-color: #000116;
+}
+
 #overskriftmenu {
-  font-size: 80px;
+  font-size: 3.5vw;
   text-align: center;
   padding: 50px;
   color: #f9ab22;
 }
 
 #underoverskriftmenu {
-  font-size: 40px;
+  font-size: 2.8vw;
   text-align: center;
   padding: 50px;
   color: #f9ab22;
@@ -256,10 +293,10 @@ section {
 }
 
 .menukortknap {
-  background-color: orange;
+  background-color: #f9ab22;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.78125vw 1.6666666666666667vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -267,7 +304,17 @@ section {
   margin: 4px 2px;
   cursor: pointer;
   position: relative;
+  right: -170px;
+  top: -180px;
+  border-radius: 15px;
 }
+
+.menukortknap:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background: #b87606;
+}
+
 
 #teksttilmenu {
   color: #f9ab22;
@@ -281,6 +328,7 @@ section {
   float: left;
   width: 50%;
   padding: 5px;
+  padding-top: 80px;
 }
 
 /* Clearfix (clear floats) */
@@ -288,6 +336,57 @@ section {
   content: "";
   clear: both;
   display: table;
+}
+
+#s5 {
+  background-image: linear-gradient(180deg,  rgba(143, 138, 138, 0.719) 0%, rgba(19, 18, 18, 0.644) 0%), url("../images/orangeevent.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+}
+
+#eventsoverskrift {
+  font-size: 80px;
+  text-align: center;
+  padding: 50px;
+  color: #f9ab22;
+}
+
+#tekstevent {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f9ab22;
+}
+
+.eventknap {
+  background-color: #f9ab22;
+  border: none;
+  color: white;
+  padding: 0.78125vw 1.6666666666666667vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  right: -400px;
+  top: 50px;
+  border-radius: 15px;
+}
+
+.eventknap:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background: #b87606;
+}
+
+.eventbillede {
+  width: 33.11%;
+  padding: 15px;
+  padding-top: 60px;
 }
 
 
