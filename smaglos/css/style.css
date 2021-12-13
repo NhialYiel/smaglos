@@ -1,5 +1,5 @@
 body {
-    font: 12px/18px Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -30,6 +30,7 @@ body {
   z-index: 999;
   width: 100%;
   background-color: transparent;
+  transition: all 0.5s ease;
 }
 
 
@@ -42,6 +43,10 @@ margin: 0;
 list-style: none;
 }
 
+.menubar.sticky {
+  background: #000116;
+}
+
 .menubar ul li {
 display: inline-block;
   width: 220px;
@@ -51,7 +56,6 @@ list-style: none;
 
 .menubar ul li a {
 text-decoration: none;
-color: white;
 padding: 0 15px 0 0;
 font-size: 20px;
 color: #f9ab22;
@@ -60,8 +64,31 @@ color: #f9ab22;
 .logo img {
 margin: 10px auto 0px auto;
 display: block;
-width:220px;
+width: 95px;
 }
+
+.pilned {
+  margin-top: -20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.arrow {
+  width:60px;
+  border-width: 0px;
+  border: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 48.20%;
+}
+
 
 
 
@@ -83,12 +110,80 @@ section {
 }
 
 #bannertekst {
-  font-size: 80px;
   color: white;
-  position: relative;
-  top: -650px;
-  right: -650px;
-  width: 550px;
+  font-size: 4.4vw;
+  position: absolute;
+  top: 40%;
+  right: 36%;
+}
+
+hr {
+  position: absolute;
+  top: 52%;
+  right: 45%;
+  width: 200px;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+  
+}
+
+.bannerknap {
+display:inline-block;
+padding:1.0em 4.4em;
+border:0.2em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+font-size: 0.7vw;
+transition: all 0.2s;
+background-color: #f9ab22;
+border-radius: 50px;
+position: absolute;
+top: 60%;
+right: 38%;
+
+}
+
+.bannerknap2 {
+  display:inline-block;
+  padding:1.0em 4.4em;
+  border:0.2em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  font-size: 0.7vw;
+  transition: all 0.2s;
+  background-color: #f9ab22;
+  border-radius: 50px;
+  position: absolute;
+  top: 60%;
+  right: 52%;
+  
+  }
+
+.bannerknap:hover {
+  transform: scale(1.25);
+  transition: 0.5s;
+  background: #f9ab22;
+  
+}
+
+.bannerknap2:hover {
+  transform: scale(1.25);
+  transition: 0.5s;
+  background: #f9ab22;
+  
 }
 
 .button1 {
@@ -146,13 +241,25 @@ section {
 }
 
 .omosbillede1 {
-  position: relative;
+  position: absolute;
   display: flex;
   padding-bottom: 10px;
-  right: -700px;
-  top: -600px;
+  right: 15%;
+  top: 108%;
+  width: 100%;
+  max-height: 350px;
+  max-width: 450px;
+}
+
+.omosbillede2 {
+  position: absolute;
+  display: flex;
+  padding-bottom: 10px;
+  right: 15%;
+  top: 150%;
   width: 100%;
   max-width: 450px;
+  max-height: 350px;
 }
 
 #omos {
@@ -164,7 +271,7 @@ section {
 
 #omostekst {
   color: #f9ab22;
-  font-size: 2em;
+  font-size: 1.2vw;
   line-height: 1.5em;
   width: 45%;
 }
@@ -293,6 +400,8 @@ section {
 
 }
 
+
+
 .menukortknap {
   background-color: #f9ab22;
   border: none;
@@ -304,13 +413,53 @@ section {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  position: relative;
-  right: -170px;
-  top: -180px;
+  position: absolute;
+  left: 33%;
+  top: 324%;
+  border-radius: 15px;
+}
+
+.menukortknap2 {
+  background-color: #f9ab22;
+  border: none;
+  color: white;
+  padding: 0.78125vw 1.6666666666666667vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 59%;
+  top: 324%;
+  border-radius: 15px;
+}
+
+.menukortknap3 {
+  background-color: #f9ab22;
+  border: none;
+  color: white;
+  padding: 0.78125vw 1.6666666666666667vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 59%;
+  top: 324%;
   border-radius: 15px;
 }
 
 .menukortknap:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background: #b87606;
+}
+
+.menukortknap2:hover {
   transform: scale(1.05);
   transition: 0.5s;
   background: #b87606;
@@ -325,9 +474,9 @@ section {
 * {
   box-sizing: border-box;
 }
-.column {
+.columnpc {
   float: left;
-  width: 50%;
+  width: 33%;
   padding: 5px;
   padding-top: 80px;
 }
@@ -371,6 +520,7 @@ section {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  font-size: 0.9vw;
   cursor: pointer;
   position: relative;
   right: -400px;
@@ -385,7 +535,7 @@ section {
 }
 
 .eventbillede {
-  width: 33.11%;
+  width: 32.51%;
   padding: 15px;
   padding-top: 60px;
 }
@@ -470,4 +620,370 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
+}
+
+.p-menu1 {
+  display: none;
+}
+
+.eventbilledemobil {
+  display: none;
+}
+
+.eventbilledemobil2 {
+  display: none;
+}
+
+.omosbilledemobil {
+  display: none;
+}
+
+.column {
+  display: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #bannertekst {
+    font-size: 11vw;
+    position: absolute;
+    right: 15%;
+
+  }
+
+  hr { 
+    display: none;
+  }
+
+  .bannerknap {
+    display:inline-block;
+    padding:1.0em 4.4em;
+    border:0.2em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    font-size: 3.7vw;
+    transition: all 0.2s;
+    background-color: #f9ab22;
+    border-radius: 50px;
+    position: absolute;
+    top: 55%;
+    right: 24%;
+    
+    }
+    
+    .bannerknap2 {
+      display:inline-block;
+      padding:1.0em 4.4em;
+      border:0.2em solid #FFFFFF;
+      margin:0 0.3em 0.3em 0;
+      border-radius:0.12em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family:'Roboto',sans-serif;
+      font-weight:300;
+      color:#FFFFFF;
+      text-align:center;
+      font-size: 3.7vw;
+      transition: all 0.2s;
+      background-color: #f9ab22;
+      border-radius: 50px;
+      position: absolute;
+      top: 70%;
+      right: 24.9%;
+      
+      }
+
+      .pilned {
+        display: none;
+      }
+
+
+      #tekstevent {
+        font-size: 4vw;
+        line-height: 1.5;
+        color: #f9ab22;
+        width: 93%;
+        text-align: left;
+        padding-left: 30px;
+      }
+
+      #eventsoverskrift {
+        font-size: 8vw;
+        padding: 20px;
+        text-align: center;
+        color: #f9ab22;
+      }
+
+      .eventbillede {
+        width: 30.51%;
+        padding: 15px;
+        padding-top: 60px;
+      }
+
+      .columnpc {
+        width: 100%;
+        padding: 5px;
+        padding-top: 80px;
+        display: none;
+      }
+
+      .column {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 128px;
+        display: block;
+      }
+
+      .omosbillede1 {
+        position: absolute;
+        display: none;
+        padding-bottom: 10px;
+        right: 12%;
+        top: 108%;
+        width: 100%;
+        max-height: 350px;
+        max-width: 450px;
+      }
+      
+      .omosbillede2 {
+        position: absolute;
+        display: none;
+        padding-bottom: 10px;
+        right: 12%;
+        top: 150%;
+        width: 100%;
+        max-width: 450px;
+        max-height: 350px;
+      }
+
+      #omos {
+        font-size: 2.5em;
+        color: #f9ab22;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      #omostekst {
+        color: #f9ab22;
+        font-size: 2.8vw;
+        line-height: 1.5em;
+        width: 45%;
+      }
+
+      #overskriftmenu {
+        font-size: 6.5vw;
+        text-align: center;
+        padding: 15px;
+        color: #f9ab22;
+      }
+      
+      #underoverskriftmenu {
+        font-size: 4.8vw;
+        text-align: center;
+        padding: 20px;
+        color: #f9ab22;
+      
+      }
+
+      #teksttilmenu {
+        color: #f9ab22;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 1.5;
+      }
+
+      .eventbillede {
+        width: 32.51%;
+        padding: 15px;
+        padding-top: 60px;
+        display: none;
+        
+      }
+
+      .eventbilledemobil {
+        height: 200px;
+        width: 190px;
+        padding-top: 15px;
+        position: absolute;
+        right: 2%;
+        display: block;
+      }
+
+      .eventbilledemobil2 {
+        height: 200px;
+        width: 190px;
+        padding-top: 15px;
+        position: absolute;
+        right: 52%;
+        display: block;
+      }
+
+      .omosbilledemobil {
+        display: block;
+        width: 100%;
+      }
+
+      .menukortknap {
+        background-color: #f9ab22;
+        border: none;
+        color: white;
+        padding: 1.78125vw 3.6666666666666667vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: absolute;
+        left: 37%;
+        top: 371%;
+        border-radius: 15px;
+      }
+
+      .drikkevareknap {
+        background-color: #f9ab22;
+        border: none;
+        color: white;
+        padding: 1.78125vw 3.6666666666666667vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: absolute;
+        left: 37%;
+        top: 392%;
+        border-radius: 15px;
+      }
+
+      .drinksknap {
+        background-color: #f9ab22;
+        border: none;
+        color: white;
+        padding: 1.78125vw 3.6666666666666667vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: absolute;
+        left: 37%;
+        top: 413%;
+        border-radius: 15px;
+      }
+
+  
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 1117px) {
+  .p-menu1 {
+    height: 100%;
+    background-color: #02173F;
+    float: left;
+    width: 100%;
+}
+
+
+
+.menubar {
+  display: none;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+  
+
+  hr {
+    position: absolute;
+    top: 52%;
+    right: 42%;
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+
+  .omosbillede1 {
+    position: absolute;
+    
+    padding-bottom: 10px;
+    right: 12%;
+    top: 108%;
+    width: 100%;
+    max-height: 350px;
+    max-width: 450px;
+  }
+  
+  .omosbillede2 {
+    position: absolute;
+    
+    padding-bottom: 10px;
+    right: 12%;
+    top: 150%;
+    width: 100%;
+    max-width: 450px;
+    max-height: 350px;
+  }
+
+  #omostekst {
+    color: #f9ab22;
+    font-size: 3.8vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    line-height: 1.5em;
+    width: 100%;
+  }
+
+  .eventknap {
+    background-color: #f9ab22;
+    border: none;
+    color: white;
+    padding: 2.78125vw 4.6666666666666667vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-size: 2.7vw;
+    cursor: pointer;
+    position: absolute;
+    right: 33%;
+    top: 92%;
+    border-radius: 15px;
+  }
+
+  .columnpc {
+    width: 60%;
+    padding: 5px;
+    padding-top: 50px;
+    padding-left: 130px;
+  }
+
+  
+
+  
 }

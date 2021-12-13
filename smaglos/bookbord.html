@@ -8,27 +8,89 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
 </head>
 
 <body>
 
-    
+    <header>
 
-        <header id="header">
-            <ul id="venstremenu">
-                <li><a href="#forside">Forside</a></li>
-                <li><a href="#menukort">Menukort</a></li>
-              </ul>
+  <nav class="menubar">
+    <div id= "navmenu">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a class="logo" href="index.html"><img src="images/logo1.png" alt="Café Smagløs Logo"></a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Book bord</a></li>
+      </ul>
+    </div>
+  </nav>
 
-              <img id="logo" src="images/logo.png" alt="logo">
+</header><!-- .header-->
 
-              <ul id="hojremenu">
-                <li><a href="#events">Events</a></li>
-                <li><a href="#bookbord">Book bord</a></li>
-              </ul>
-        </header><!-- .header-->
+
+<div class="wrapper">
+
+  <img class="banner" src="images/smaglosudefra.jpg" alt="smaglos udefra">
+  <section>
+    <form id="formular" action="kvit.html" method="">
+        <h1 class="formular_overskrift">Book bord</h1>
+
+        <div class="formular_felter">
+            <div>
+                <label for="dato" class="etiket">Dato</label>
+                <input type="date" data-dato="dag" id="dato">
+            </div>
+
+            
+
+            <div>
+                <label for="personer" class="etiket">Antal gæster</label>
+                <input type="number" data-personer="antal" value="1" id="personer" max="9" min="1">
+            </div>
+
+            <div>
+                <label for="kufferter" data-tid="tid" class="etiket">Tidspunkt</label>
+                <select id="kufferter">
+                    <option value="0">09:00-10:00</option>
+                    <option value="1">10:00-11:00</option>
+                    <option value="2">11:00-12:00</option>
+                    <option value="3">12:00-13:00</option>
+                    <option value="4">13:00-14:00</option>
+                    <option value="5">14:00-15:00</option>
+                    <option value="6">15:00-16:00</option>
+                    <option value="7">16:00-17:00</option>
+                    <option value="8">17:00-18:00</option>
+                    <option value="9">18:00-19:00</option>
+                    <option value="10">19:00-20:00</option>
+                    <option value="11">20:00-24:00</option>
+
+                </select>
+            </div>
+        </div>
+
+        
+            
+          <br><br><br>Navn:<input type="text" data-navn="navnn" id="navn" required><br>
+          
+          <br><br>Mobil:<input type="text" data-nummer="nummer" id="mobil" required><br>
+          
+          <br><br>E-mail:<input type="text" data-email="mail" id="email" required><br>
+
+          
+          <div class="formular_knap">
+            <button id="sog" class="sog" type="submit">Book nu</button>
+        </div>
+
+          
+
+        
+    </form>
+</section>
+        
 
         <main id="content">
             
@@ -42,7 +104,8 @@
         </footer><!-- .footer -->
 
     
-
+</div>
+<script src="js/javascript3.js"></script>
 </body>
 
 </html>
