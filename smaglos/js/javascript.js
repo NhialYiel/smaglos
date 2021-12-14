@@ -1,11 +1,11 @@
-const checkpoint = 300;
+const checkpoint = 300; //Toppen af siden
  
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
+window.addEventListener("scroll", () => { //Event på når man scroller
+  const currentScroll = window.pageYOffset; // Når man scroller ned af og ikke hen
+  if (currentScroll <= checkpoint) { 
     opacity = 1 - currentScroll / checkpoint;
   } else {
-    opacity = 0;
+    opacity = 0; // Hvis du scroller højere end checkpoint som er toppen, så er pilen synlig, hvis du scroller ned forsvinder den
   }
   document.querySelector(".arrow").style.opacity = opacity;
 });
@@ -28,19 +28,19 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // skifer billede hvert andet sekund
 }
 
 $(document).ready(function(){
   $(window).scroll(function(){
-      // sticky navbar on scroll script
+      // sticky navigation når man scroller
       if(this.scrollY > 20){
           $('.menubar').addClass("sticky");
       }else{
           $('.menubar').removeClass("sticky");
       }
       
-      // scroll-up button show/hide script
+      // scroll-up knap viser og gemmer script
       if(this.scrollY > 500){
           $('.scroll-up-btn').addClass("show");
       }else{

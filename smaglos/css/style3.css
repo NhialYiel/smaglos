@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+body {
+    font: 12px/18px "Avenir", sans-serif;
+    background-color: #000016;
+}
+
+#s1 h1 {
+    font-family: "Apple Chancery";
+    font-size: 40px;
+    color: #f9ab22;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+#s1 p {
+    font-size: 20px;
+    color: #f9ab22;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5em;
+}
+#s3 h1 {
+    font-family: "Apple Chancery";
+    font-size: 35px;
+    color: #f9ab22;
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Menuen
+-----------------------------------------------------------------------------*/
+#logo {
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+.burger {
+    width: 45px;
+    height: 5px;
+    background-color: #f9ab22;
+    margin: 9px;
+    border-radius: 20px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdownto {
+    display: none;
+}
+
+#burgerbuttom {
+    background-color: #f9ab22;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+#burgerdropdown {
+    display: inline;
+    float: right;
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+#burgercontent {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    width: 100%;
+    text-align: right;
+    margin-top: 5%;
+    transition: 0.3s;
+    background-color: #000116;
+
+}
+
+input[type=checkbox]:checked~#burgercontent {
+    display: block;
+}
+
+#foldudmenu {
+    display: none;
+}
+
+#burgercontent a {
+    color: #f9ab22;
+    padding: 20px 20px;
+    display: block;
+    font-size: 1em;
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+#burgercontent a:hover {
+    text-decoration: underline;
+
+}
+
+#menu {
+    display: none;
+}
+
+#menu li {
+    list-style: none;
+}
+
+
+
+.menubar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #000016;
+}
+
+
+.menubar ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menubar ul li {
+    display: inline-block;
+    width: 220px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px 0 0;
+    font-size: 20px;
+    color: #f9ab22;
+
+}
+
+.logo img {
+    margin: 10px auto 0px auto;
+    display: block;
+    width: 120px;
+}
+
+
+#myVideo {
+    display: none;
+    width: 100%;
+}
+
+.bookbordknap {
+    background-color: #f9ab22;
+    border: none;
+    color: white;
+    padding: 0.78125vw 1.6666666666666667vw;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 6px 4px;
+    cursor: pointer;
+    position: relative;
+    right: -400px;
+    top: 50px;
+    border-radius: 12px;
+}
+
+.bookbordknap:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background: #b87606;
+}
+
+/* slideshow
+-----------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    height: auto;
+    background: #000116;
+    padding: 70px 0;
+
+}
+
+.footertekst {
+    color: #f9ab22;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #FFFBEB;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #f9ab22;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col p {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    color: #FFFBEB;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/* Mobilefirst
+...............................*/
+
+@media only screen and (min-width: 170px) {
+    #burgercontent {
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (min-width: 188px) {
+    #burgercontent {
+        margin-top: 22%;
+    }
+}
+
+@media only screen and (min-width: 215px) {
+    #burgercontent {
+        margin-top: 19%;
+    }
+}
+
+@media only screen and (min-width: 245px) {
+    #burgercontent {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    #burgercontent {
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #burgercontent {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    #burgercontent {
+        margin-top: 8%;
+    }
+
+    #s1 h1 {
+        font-size: 60px;
+        margin-top: 2%;
+
+    }
+}
+
+
+@media only screen and (min-width: 515px) {
+    #burgercontent {
+        margin-top: 6%;
+    }
+
+    #s1 h1 {
+        font-size: 70px;
+        margin-bottom: 0%;
+    }
+
+    #s1 p {
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 655px) {
+    #burgercontent {
+        margin-top: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 735px) {
+    #burgercontent {
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav a {
+        color: #f9ab22;
+        font-size: 22px;
+        padding: 4%;
+        text-decoration: none;
+        vertical-align: middle;
+        display: row;
+
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+
+    #menu {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #menu li {
+        text-align: center;
+
+    }
+
+    #burgerdropdown {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #forsidebillede {
+        display: none;
+    }
+
+    #myVideo {
+        display: flex;
+    }
+
+    #s1 h1 {
+        font-size: 70px;
+        margin-top: 2%;
+        margin-left: 0.1%;
+
+    }
+
+    .menuen {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mad {
+        width:33%;
+    }
+
+    .drikke {
+        width: 33%;
+    }
+
+    .drinks {
+        width: 33%;
+    }
+
+    #s3 h1 {
+        font-size: 60px;
+        padding-top: 12%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    /* Menu til desktop
+...............................*/
+
+    #s1 h1 {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+    #s1 p {
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    #s3 h1 {
+        font-size: 70px;
+        padding-top: 10%;
+        margin-bottom: 4%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Menu til desktop
+...............................*/
+
+
+
+
+
+}

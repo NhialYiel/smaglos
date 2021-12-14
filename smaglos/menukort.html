@@ -4,58 +4,105 @@
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>Smagløs</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <title>Café Smagløs - Menukort</title>
+    <meta name="keywords" content="menukort, drikkekort, drinkskort, shots, øl, vin, drink, små retter, store retter, bruger, nachos, brunch, sodavand, juice, kaffe, te. ">
+    <meta name="description" content="Café smagløs' menukort, drinkskort og drikkekort, så du kan se hvad du kan få." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style3.css" rel="stylesheet">
 </head>
 
 <body>
-
-    
-
-        <header id="header">
-            <ul id="venstremenu">
-                <li><a href="#forside">Forside</a></li>
-                <li><a href="#menukort">Menukort</a></li>
-              </ul>
-
-              <img id="logo" src="images/logo.png" alt="logo">
-
-              <ul id="hojremenu">
-                <li><a href="#events">Events</a></li>
-                <li><a href="#bookbord">Book bord</a></li>
-              </ul>
-        </header><!-- .header-->
-
-        <main id="content">
-          <div class="wrapper">
-
-            <h1 id="overskriftmenu">Menukort</h1>
-
-            <h2 id="underoverskriftmenu">Vores menu</h2>
-
-            <p id="teksttilmenu">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting, 
-              remaining essentially unchanged.</p>
-
-              <a href="menukort.html" class="menukortknap">Vis menukort</a>
-            
-            
-
+  <div id="wrapper">
+    <header>
+      <!-- Dropdown menuen -->
+      <label for="foldudmenu">
+        <div id="burgerdropdown">
+          <div id="bugerbuttom">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
           </div>
-        </main><!-- .content -->
 
-        <footer id="footer">
-            
-        </footer><!-- .footer -->
+          <input type="checkbox" id="foldudmenu" name="foldudmenu">
 
-    
+          <div id="burgercontent">
+            <a href="index.html">Forside</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">Events</a>
+            <a href="bookbord.html">Book bord</a>
+          </div>
+        </div>
+      </label>
 
+      <a href="index.html"><img id="logo" src="images/logo2.png" alt="logo for cafe smagløs "></a>
+      <!-- Menuen -->
+
+
+      <nav id="menu">
+        <ul>
+          <li>
+            <a class="menupunkt" href="index.html">Forside</a>
+            <a class="menupunkt" href="menu.html">Menu</a>
+            <a class="logomenu" href="index.html"><img src="images/logo2.png" alt="Café Smagløs Logo"></a>
+            <a class="menupunkt" href="#">Events</a>
+            <a href="bookbord.html">Book bord</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section id="s3">
+            <h1>Menu- og drinkskort</h1>
+            <div class="menuen">
+                <div class="mad">
+                <img src="images/menukort.png" style="width:100%" alt="billede af valsemøllens grovvalsede havregryn">
+                </div>
+                <div class="drikke">
+                   <img src="images/drikkekort.png" style="width:100%" alt="billede af valsemøllens økologiske finvalsede havregryn">
+                </div>
+                <div class="drinks">
+                <img src="images/drinkskort.png" style="width:100%" alt="billede af valsemøllens økologiske grovvalsede havregryn">
+                    
+                </div>
+            </div>
+        </section>
+        
+      </article>
+    </main>
+    <!-- .footer -->
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Adresse</h4>
+            <p class="footertekst">Klostertorvet 7<br>8000 Aarhus<br>Tlf.:23 10 20 10<br>Mail: info@smaglos.dk</p>
+          </div>
+          <div class="footer-col">
+            <h4>Åbningstider</h4>
+            <p class="footertekst">Mandag 09:00 – 23:00<br>
+              Tirsdag: 09:00 – 23:00<br>
+              Onsdag: 09:00 – 23:00<br>
+              Torsdag: 09:00 – 02:00<br>
+              Friday: 09:00 – 02:00 <br>
+              Lørdag: 09:00 – 02:00<br>
+              Søndag: 09:00 – 23:00<br></p>
+          </div>
+
+          <div class="footer-col">
+            <h4>følg os her</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/smagloesaarhus/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/cafe_smagloes/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

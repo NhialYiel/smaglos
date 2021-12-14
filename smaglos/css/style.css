@@ -293,18 +293,7 @@ right: 38%;
   padding-top: 50px;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
+/* Prikker der viser hvilken nummer billede man er på */
 .dot {
   height: 15px;
   width: 15px;
@@ -700,9 +689,7 @@ ul{
       
       }
 
-      .pilned {
-        display: none;
-      }
+      
 
 
       #tekstevent {
@@ -902,6 +889,24 @@ ul{
     float: left;
     width: 100%;
 }
+
+#header {
+  height: 100vh;
+  width: 100%;
+
+  background-image:radial-gradient(circle, rgba(177, 181, 196, 0.308) 0%, rgba(0,0,0,1) 93%),url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  
+}
+
+
+
+
+
+
 
 
 
